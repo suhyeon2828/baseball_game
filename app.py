@@ -24,7 +24,7 @@ if ok:
     if error != '':
         st.warning(error)
     else:
-        guess = to_numbers(text)
+        guess = to_number(text)
         strike = count_strike(st.session_state.answer, guess)
         ball = count_ball(st.session_state.answer, guess)
         result = result_text(strike, ball)
